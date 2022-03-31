@@ -1,0 +1,18 @@
+// ImtPN (Atlantique)
+// Bootswatch
+
+//
+// Color system
+//
+
+// General layout settings
+
+@import '../../imtpn/scss/abstracts/colors';
+$primary: $imt-telecom_sud_paris-primary;
+$secondary: $imt-telecom_sud_paris-secondary;
+
+@import "../../imtpn/scss/pre";
+
+.navbar__logo {
+  height: 80px !important;
+}
