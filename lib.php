@@ -22,6 +22,7 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use theme_imtpn\local\utils;
 use theme_imtpn\mur_pedagogique;
 
 /**
@@ -37,11 +38,11 @@ use theme_imtpn\mur_pedagogique;
  * @return bool
  * @throws coding_exception
  */
-function theme_imtpn_telecom_sud_paris_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+function theme_imtpn_telecom_sud_paris_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload,
+    array $options = array()) {
     return theme_clboost\local\utils::generic_pluginfile('imtpn', $course, $cm, $context, $filearea, $args, $forcedownload,
         $options);
 }
-
 
 /**
  * Fix issue with notloggedin class
@@ -53,5 +54,5 @@ function theme_imtpn_telecom_sud_paris_pluginfile($course, $cm, $context, $filea
  * @param $page
  */
 function theme_imtpn_telecom_sud_paris_page_init($page) {
-    mur_pedagogique::set_additional_page_classes($page);
+    utils::add_body_additional_classes($page);
 }
