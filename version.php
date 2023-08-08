@@ -26,10 +26,10 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2021011907; /* This is the version number to increment when changes needing an update are made */
-$plugin->requires  = 2019111800;
-$plugin->release   = '0.1.0';
-$plugin->maturity  = MATURITY_ALPHA;
+$plugin->version   = 2023080800; /* This is the version number to increment when changes needing an update are made */
+$plugin->requires  = 2022112804;
+$plugin->release   = '4.1.1';
+$plugin->maturity  = MATURITY_STABLE;
 $plugin->component = 'theme_imtpn_telecom_sud_paris';
 $plugin->dependencies = [
     'theme_imtpn' => ANY_VERSION,
